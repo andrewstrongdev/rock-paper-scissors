@@ -49,8 +49,19 @@ const rock = () => {
         alert("Tie, try again!")
     }
 
+    if (myLives === 0){
+        document.getElementById("myLives").innerHTML = myLives
+        alert("Game Over You Lose!")
+    } else if (botsLives === 0){
+        document.getElementById("botsLives").innerHTML = botsLives
+        alert("Game Over You Win!")
+    } else {
+
     document.getElementById("myLives").innerHTML = myLives
     document.getElementById("botsLives").innerHTML = botsLives
+    }
+
+    
 }
 
 // on paper button click
@@ -69,8 +80,19 @@ const paper = () => {
         alert("Tie, try again!")
     }
 
+    if (myLives === 0){
+        document.getElementById("myLives").innerHTML = myLives
+        alert("Game Over You Lose!")
+    } else if (botsLives === 0){
+        document.getElementById("botsLives").innerHTML = botsLives
+        alert("Game Over You Win!")
+    } else {
+
     document.getElementById("myLives").innerHTML = myLives
     document.getElementById("botsLives").innerHTML = botsLives
+    }
+
+    
 
 }
 
@@ -91,9 +113,20 @@ const scissors = () => {
         alert("Tie, try again!")
     }
 
+    if (myLives === 0){
+        document.getElementById("myLives").innerHTML = myLives
+        alert("Game Over You Lose!")
+    } else if (botsLives === 0){
+        document.getElementById("botsLives").innerHTML = botsLives
+        alert("Game Over You Win!")
+    } else {
+
     document.getElementById("myLives").innerHTML = myLives
     document.getElementById("botsLives").innerHTML = botsLives
+    }
 }
+
+
 
 rockBtn.addEventListener('click', rock)
 paperBtn.addEventListener('click', paper)
