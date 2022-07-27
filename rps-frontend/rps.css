@@ -19,11 +19,11 @@ body {
 
 #shrek {
     position: absolute;
-    top: 33%;
+    top: 34%;
     left:15%;
     z-index: 0;
     width:auto;
-    height:400px;
+    height:450px;
 }
 
 #farquad {
