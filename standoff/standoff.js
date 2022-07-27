@@ -40,7 +40,7 @@ const rock = () => {
     let botsPick = botsChoices[randomIndex];
 
     if (botsPick === 'paper'){
-        alert("Bot won!")
+        alert("Bot won with paper!")
         myLives--
     } else if (botsPick === 'scissors'){
         alert("You won!")
