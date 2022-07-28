@@ -2,7 +2,6 @@ body {
     overflow: hidden;
     margin: 0;
     font-family: Arial;
-    
 }
 
 .container {
@@ -13,34 +12,92 @@ body {
 .battle-ground {
     height: 80%;
     width: 100%;
-    background-color: #BCF0B7;
-    z-index:0
+    /* background: linear-gradient( rgb(42, 196, 231) 10%, rgb(13, 123, 13)35%, rgb(140, 225, 143)); */
+    background-image: url("swamp.png");
+}
+
+#f-grass {
+    position:absolute;
+    z-index:0;
+    top:40%;
+    left:60%;
+    width:auto;
+    height:75px;
+}
+
+#s-grass {
+    position:absolute;
+    width:auto;
+    height:300px;
+    top:65%;
+    left:-2%;
+    z-index:0;
 }
 
 #shrek {
     position: absolute;
-    top: 34%;
+    top: 25%;
     left:15%;
-    z-index: 0;
     width:auto;
-    height:450px;
+    height:500px;
+    z-index:1;
+    
 }
 
 #farquad {
     position: absolute;
-    top: 10%;
+    top: 15%;
     left:70%;
-    z-index: 0;
     width:auto;
     height: 250px;
+    z-index:1;
+}
+
+.health-box {
+    width: 600px;
+    height: 150px;
+    background-color: rgb(207, 189, 189);
+    border-style: inset;
+}
+
+#farquad-lives {
+    position: absolute;
+    top:5%;
+    left:5%;
+    border-radius: 150px 800px 50px 50px;
+
+}
+
+#shrek-lives {
+    position: absolute;
+    top:55%;
+    left:52%;
+    border-radius: 800px 50px 150px 50px
+
+}
+
+.name{
+    margin-left: 90px;
+    margin-top: 50px;
+    font-size: 50px;
+    font-family: 'Aclonica', sans-serif;
+
+}
+
+.health{
+    margin-left: 425px;
+    margin-top: -125px;
+    font-size: 100px;
+    font-family: 'Aclonica', sans-serif;
 }
 
 .buttons-container {
+    position: absolute;
     height:20%;
     width: 100%;
     background-color: #5EB6CC;
     border-top: 2px solid black;
-    z-index: 1;
+    z-index:1;
 }
 
 #prompt {
@@ -49,7 +106,7 @@ body {
     background-color: grey;
     border-radius: 50px 50px 50px 50px;
     position: absolute;
-    top: 83%;
+    top: 15%;
     left: .5%;
 
 }
@@ -64,18 +121,18 @@ button{
 
 #rock {
     position: absolute;
-    top: 83%;
+    top: 15%;
     left: 47.5%;
 }
 
 #paper {
     position: absolute;
-    top: 83%;
+    top: 15%;
     left: 65%;
 }
 
 #scissors {
     position: absolute;
-    top: 83%;
+    top: 15%;
     left: 82.5%;
 }
