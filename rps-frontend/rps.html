@@ -11,7 +11,7 @@
 
     </head>
     <body>
-        <div class="container">
+        <div class="container" id="container" style="visibility: visible;">
 
       
 
@@ -21,11 +21,18 @@
                 <img id="f-grass" src="f-pad.png">
                 <img id="s-grass" src="s-pad.png">
                 <div class="health-box" id="farquad-lives">
-                    <p class="name" id="farquad-name">Farquad</p><p class="health" id="farquad-life-counter">3</p>
+                    <p class="name" id="farquad-name">Farquad</p><p class="health" id="farquad-life-counter">1</p>
                 </div>
                 <div class="health-box" id="shrek-lives">
-                    <p class="name" id="shrek-name">Shrek</p><p class="health" id="shrek-life-counter">3</p>
+                    <p class="name" id="shrek-name">Shrek</p><p class="health" id="shrek-life-counter">1</p>
                 </div>
+                <img id="shrek-rock" src="therock.png" style="visibility: hidden;">
+                <img id="farq-rock" src="therock.png" style="visibility: hidden;">
+                <img id="shrek-paper" src="s-plane.png" style="visibility: hidden;">
+                <img id="farq-paper" src="f-plane.png" style="visibility: hidden;">
+                <img id="shrek-scissors" src="thescissors.png" style="visibility: hidden;">
+                <img id="farq-scissors" src="thescissors.png" style="visibility: hidden;">
+
             </section>
        
             <section class="buttons-container">
@@ -34,7 +41,11 @@
                 <button id="paper">PAPER</button>
                 <button id="scissors">SCISSORS</button>
             </section>
-
+            
+        </div>
+        <div class="container2" id="container2" style="visibility: hidden;">
+            <div class="endscreen" id="shrekWins" style="visibility: hidden;">SHREK WINS</div>
+            <div class="endscreen" id="shrekLoses" style="visibility: hidden;">SHREK LOSES</div>
         </div>
         <script src="rps.js"></script>
     </body>

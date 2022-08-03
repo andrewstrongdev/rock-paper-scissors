@@ -13,24 +13,24 @@ body {
     height: 80%;
     width: 100%;
     /* background: linear-gradient( rgb(42, 196, 231) 10%, rgb(13, 123, 13)35%, rgb(140, 225, 143)); */
-    background-image: url("swamp.png");
+    background-image: url("swamp5.png");
 }
 
 #f-grass {
     position:absolute;
     z-index:0;
-    top:40%;
-    left:60%;
+    top:46%;
+    left:62%;
     width:auto;
-    height:75px;
+    height:65px;
 }
 
 #s-grass {
     position:absolute;
     width:auto;
-    height:300px;
-    top:65%;
-    left:-2%;
+    height:250px;
+    top:69%;
+    left:4%;
     z-index:0;
 }
 
@@ -46,7 +46,7 @@ body {
 
 #farquad {
     position: absolute;
-    top: 15%;
+    top: 20%;
     left:70%;
     width:auto;
     height: 250px;
@@ -64,21 +64,49 @@ body {
     position: absolute;
     top:5%;
     left:5%;
-    border-radius: 150px 800px 50px 50px;
+    border-radius: 50% 50% 50% 50%;
     background-color: rgb(136, 1, 1);
     box-shadow: 12px 8px 10px;
 
 }
+#farquad-lives::before {
+    content: "";
+    position: absolute;
+    
+    background-color: transparent;
+    right: -30px;
+    top:80%;
+    height: 30px;
+    width: 100px;
+    border-bottom-left-radius: 80%;
+    box-shadow: -50px 0 0 0 rgb(136, 1, 1);
+    z-index: 0;
+  }
+
 
 #shrek-lives {
     position: absolute;
     top:55%;
     left:52%;
-    border-radius: 800px 50px 150px 50px;
+    border-radius: 50% 50% 50% 50%;
     background-color: rgb(172, 255, 47);
     box-shadow: -12px 8px 10px;
+    
 
 }
+#shrek-lives::before {
+    content: "";
+    position: absolute;
+    
+    background-color: transparent;
+    left: -30px;
+    top:80%;
+    height: 30px;
+    width: 100px;
+    border-bottom-right-radius: 80%;
+    box-shadow: 50px 0 0 0 rgb(172, 255, 47);
+    z-index: 0;
+  }
 
 .name{
     font-size: 60px;
@@ -102,6 +130,59 @@ body {
     font-size: 100px;
     font-family: 'Aclonica', sans-serif;
 }
+
+#farq-rock {
+    position:absolute;
+    left: 60%;
+    top:25%;
+    height: 120px;
+    width: auto;
+}
+
+#farq-paper {
+    position:absolute;
+    left: 60%;
+    top:30%;
+    height: 75px;
+    width: auto;
+    transform: rotate(-30deg);
+}
+
+#farq-scissors {
+    position:absolute;
+    left: 60%;
+    top:30%;
+    height: 120px;
+    width: auto;
+    transform:rotate(-120deg);
+}
+
+
+#shrek-rock {
+    position:absolute;
+    left: 40%;
+    top:40%;
+    height: 150px;
+    width: auto;
+}
+
+#shrek-paper {
+    position:absolute;
+    left: 38%;
+    top:42%;
+    height: 150px;
+    width: auto;
+}
+
+#shrek-scissors {
+    position:absolute;
+    left: 40%;
+    top:40%;
+    height: 150px;
+    width: auto;
+    transform:rotate(60deg);
+}
+
 
 .buttons-container {
     position: absolute;
@@ -148,4 +229,24 @@ button{
     position: absolute;
     top: 12%;
     left: 82.5%;
+}
+
+
+.container2 {
+    height: 100vh;
+    width: 100vw;
+    background-color:aquamarine
+}
+.endscreen {
+    position:absolute;
+    z-index:1;
+    height: 100%;
+    width:100%;
+}
+.endscreen#shrekWins{
+    background-color:rgb(172, 255, 47);
+}
+
+.endscreen#shrekLoses{
+    background-color:rgb(136, 1, 1);
 }
