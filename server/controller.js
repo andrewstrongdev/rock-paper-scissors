@@ -1,4 +1,4 @@
-const hallOfFame = ['john', 'jacob', 'Mckay', 'andrew', 'kyle']
+const hallOfFame = ['Jebby', 'Jacob', 'Mckay', 'Shrek', 'Kyle', 'Jimmy Neutron', 'Kiyaaaul']
 
 
 module.exports = {

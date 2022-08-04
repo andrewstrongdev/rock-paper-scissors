@@ -2,6 +2,7 @@
 const rockBtn = document.getElementById("rock")
 const paperBtn = document.getElementById("paper")
 const scissorsBtn = document.getElementById("scissors")
+const quitBtn = document.getElementById("quit")
 // const getHallBtn = document.getElementById("getHallofFame")
 // const homeBtn = document.getElementById("homescreen")
 
@@ -9,7 +10,7 @@ const shrekLivesH2 = document.getElementById("shrek-life-counter")
 const farquadLivesH2 = document.getElementById("farquad-life-counter")
 
 const farquadChoices = ['rock', 'paper', 'scissors']
-let shrekLives = 1;
+let shrekLives = 10;
 let farquadLives = 1;
 
 //delay function
@@ -67,6 +68,12 @@ const rock = () => {
         // document.getElementById("farq-scissors").style.visibility="hidden";
         window.location.href = "http://127.0.0.1:5500/rps-frontend/sl.html"
         // window.open("http://127.0.0.1:5500/rps-frontend/sl.html")
+        
+    } else if ((farquadLives === 0)&(shrekLives > 2)){
+        // document.getElementById("farquad-life-counter").innerHTML = farquadLives
+        // document.getElementById("shrekWins").style.visibility="visisble";
+        window.location.href = "http://127.0.0.1:5500/rps-frontend/sw.html"
+        document.getElementById("hallOfFameName").style.visibility="visible";
         
     } else if (farquadLives === 0){
         // document.getElementById("farquad-life-counter").innerHTML = farquadLives
@@ -149,7 +156,13 @@ sleep(1500).then(() =>{
         // document.getElementById("shrekLoses").style.visibility="visisble";
         window.location.href = "http://127.0.0.1:5500/rps-frontend/sl.html"
         
-    } else if (farquadLives === 0){
+    } else if ((farquadLives === 0)&(shrekLives > 2)){
+        // document.getElementById("farquad-life-counter").innerHTML = farquadLives
+        // document.getElementById("shrekWins").style.visibility="visisble";
+        window.location.href = "http://127.0.0.1:5500/rps-frontend/sw.html"
+        document.getElementById("hallOfFameName").style.visibility="visible";
+        
+    }else if (farquadLives === 0){
         // document.getElementById("farquad-life-counter").innerHTML = farquadLives
         // document.getElementById("shrekWins").style.visibility="visisble";
         window.location.href = "http://127.0.0.1:5500/rps-frontend/sw.html"
@@ -220,6 +233,12 @@ const scissors = () => {
         // document.getElementById("shrekLoses").style.visibility="visisble";
         window.location.href = "http://127.0.0.1:5500/rps-frontend/sl.html"
         
+    } else if ((farquadLives === 0)&(shrekLives > 2)){
+        // document.getElementById("farquad-life-counter").innerHTML = farquadLives
+        // document.getElementById("shrekWins").style.visibility="visisble";
+        window.location.href = "http://127.0.0.1:5500/rps-frontend/sw.html"
+        document.getElementById("hallOfFameName").style.visibility="visible";
+        
     } else if (farquadLives === 0){
         // document.getElementById("farquad-life-counter").innerHTML = farquadLives
         // document.getElementById("shrekWins").style.visibility="visisble";
@@ -245,6 +264,10 @@ const scissors = () => {
 });
 }
 
+const quit = () => {
+    document.getElementById("hallOfFameName").style.visibility="hidden";
+
+}
 
 // const getHall = () => {
 //     console.log('hit the button')
@@ -260,6 +283,7 @@ const scissors = () => {
 rockBtn.addEventListener('click', rock)
 paperBtn.addEventListener('click', paper)
 scissorsBtn.addEventListener('click', scissors)
+quitBtn.addEventListener('click', quit)
 // getHallBtn.addEventListener('click', getHall)
 // homeBtn.addEventListener('click',
 

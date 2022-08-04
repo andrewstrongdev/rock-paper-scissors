@@ -1,6 +1,6 @@
 // const { resolve } = require("path")
 
-const { default: axios } = require("axios")
+// const { default: axios } = require("axios")
 
 const getHallButton = document.getElementById("getHallofFame")
 const hallSection = document.getElementById("theHall")
