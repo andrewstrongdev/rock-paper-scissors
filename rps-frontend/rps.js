@@ -2,7 +2,7 @@
 const rockBtn = document.getElementById("rock")
 const paperBtn = document.getElementById("paper")
 const scissorsBtn = document.getElementById("scissors")
-const quitBtn = document.getElementById("quit")
+// const submitBtn = document.getElementById("submit")
 // const getHallBtn = document.getElementById("getHallofFame")
 // const homeBtn = document.getElementById("homescreen")
 
@@ -21,7 +21,6 @@ function sleep(ms) {
 
 // on rock button click
 const rock = () => {
-
     document.getElementById("shrek-rock").style.visibility="visible";
     document.getElementById("prompt").innerHTML = "Shrek chose rock!"
 
@@ -56,6 +55,7 @@ const rock = () => {
         });
         
     }
+
     sleep(1600).then(() =>{
     if (shrekLives === 0){
         // document.getElementById("shrek-life-counter").innerHTML = shrekLives
@@ -69,13 +69,17 @@ const rock = () => {
         window.location.href = "http://127.0.0.1:5500/rps-frontend/sl.html"
         // window.open("http://127.0.0.1:5500/rps-frontend/sl.html")
         
-    } else if ((farquadLives === 0)&(shrekLives > 2)){
+    } else if ((farquadLives === 0)&&(shrekLives > 2)){
+        console.log('asdf')
         // document.getElementById("farquad-life-counter").innerHTML = farquadLives
         // document.getElementById("shrekWins").style.visibility="visisble";
-        window.location.href = "http://127.0.0.1:5500/rps-frontend/sw.html"
-        document.getElementById("hallOfFameName").style.visibility="visible";
+        window.location.href = "http://127.0.0.1:5500/rps-frontend/homescreen.html"
+        sleep(500).then(() =>{
+            document.getElementById("hallOfFameName").style.visibility="visible";
+        })
         
     } else if (farquadLives === 0){
+        console.log('fdasfdsa')
         // document.getElementById("farquad-life-counter").innerHTML = farquadLives
         // document.getElementById("container").style.visibility="hidden";
         // document.getElementById("container2").style.visibility="visible";
@@ -264,10 +268,10 @@ const scissors = () => {
 });
 }
 
-const quit = () => {
-    document.getElementById("hallOfFameName").style.visibility="hidden";
+// const submit = () => {
+//     return document.getElementById("hallOfFameName").style.visibility="hidden";
 
-}
+// }
 
 // const getHall = () => {
 //     console.log('hit the button')
@@ -283,7 +287,7 @@ const quit = () => {
 rockBtn.addEventListener('click', rock)
 paperBtn.addEventListener('click', paper)
 scissorsBtn.addEventListener('click', scissors)
-quitBtn.addEventListener('click', quit)
+// submitBtn.addEventListener('click', submit)
 // getHallBtn.addEventListener('click', getHall)
 // homeBtn.addEventListener('click',
 

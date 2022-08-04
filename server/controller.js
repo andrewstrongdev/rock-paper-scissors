@@ -8,6 +8,8 @@ module.exports = {
     },
     postHall: (req, res) => {
         console.log(req.body)
+        hallOfFame.push(req.body.name)
+        res.status(200).send(hallOfFame)
         
     }
 }

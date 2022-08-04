@@ -10,7 +10,7 @@ const {getHall, postHall} = require('./controller')
 
 
 app.get('/api/hall', getHall )
-app.post('/api/hall', postHall )
+app.post('/api/post/hall', postHall )
 
 const port = 4004
 

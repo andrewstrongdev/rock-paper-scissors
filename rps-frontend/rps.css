@@ -328,12 +328,24 @@ button{
 
 #theHall {
     position: absolute;
-    left:44%;
+    left:39%;
     top:28%;
+    height: 500px;
     font-size: 30px;
     padding: 10px 25px;
-    border-radius: 10px double black;
+    border: 10px double black;
+    text-align: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
+
+/* #divhof {
+    position: absolute;
+    left:44%;
+    top:28%;
+    
+
+} */
 
 #hallOfFameName{
     position:absolute;
@@ -345,6 +357,7 @@ button{
     z-index:1;
     border: 5px solid black;
     border-radius: 10%;
+    visibility:hidden;
 }
 
 #hofh1{
